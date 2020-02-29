@@ -36,16 +36,16 @@ function* generator(collection) {
 const iterator = new MyIterator(['I', 'am', 'a', 'tiger']);
 
 for (const val of iterator) {
-    console.log(`val => ${val}`);
+    console.log(`for of iterator => ${val}`);
 }
 
 const gen = generator(['I', 'am', 'a', 'tiger']);
 
 for (const el of gen) {
-    console.log(el);
+    console.log('for of generator', el);
 }
 
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
+console.log("next generator ",gen.next().value);
+console.log("next generator ",gen.next().value);
+console.log("next generator ",gen.next().value);
+console.log("next generator ",gen.next().value);
