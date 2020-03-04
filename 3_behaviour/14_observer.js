@@ -56,6 +56,5 @@ stream$.fire({type: 'INCREMENT'});
 stream$.fire({type: 'DECREMENT'});
 stream$.fire({type: 'DECREMENT'});
 
-
 console.log(obs1.state);
 console.log(obs2.state);
